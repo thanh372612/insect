@@ -1,0 +1,9 @@
+package com.myspace.insect;
+
+import java.lang.Number;
+
+rule "insect"
+	dialect "mvel"
+	when
+	then
+end
