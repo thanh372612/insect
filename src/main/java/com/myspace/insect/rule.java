@@ -8,12 +8,15 @@ public class rule implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "id")
+	@org.kie.api.definition.type.Label("id")
 	private java.lang.String id;
-	@org.kie.api.definition.type.Label(value = "rule_code")
+	@org.kie.api.definition.type.Label("rule_code")
 	private java.lang.String rule_code;
-	@org.kie.api.definition.type.Label(value = "rule_set_name")
+	@org.kie.api.definition.type.Label("rule_set_name")
 	private java.lang.String rule_set_name;
+
+	@org.kie.api.definition.type.Label(value = "product_code")
+	private java.lang.String product_code;
 
 	public rule() {
 	}
@@ -42,11 +45,20 @@ public class rule implements java.io.Serializable {
 		this.rule_set_name = rule_set_name;
 	}
 
+	public java.lang.String getProduct_code() {
+		return this.product_code;
+	}
+
+	public void setProduct_code(java.lang.String product_code) {
+		this.product_code = product_code;
+	}
+
 	public rule(java.lang.String id, java.lang.String rule_code,
-			java.lang.String rule_set_name) {
+			java.lang.String rule_set_name, java.lang.String product_code) {
 		this.id = id;
 		this.rule_code = rule_code;
 		this.rule_set_name = rule_set_name;
+		this.product_code = product_code;
 	}
 
 }
