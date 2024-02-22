@@ -6,12 +6,47 @@ package com.myspace.insect;
 
 public class rule implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public rule() {
-    }
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.String id;
+	@org.kie.api.definition.type.Label(value = "rule_code")
+	private java.lang.String rule_code;
+	@org.kie.api.definition.type.Label(value = "rule_set_name")
+	private java.lang.String rule_set_name;
 
+	public rule() {
+	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.String getRule_code() {
+		return this.rule_code;
+	}
+
+	public void setRule_code(java.lang.String rule_code) {
+		this.rule_code = rule_code;
+	}
+
+	public java.lang.String getRule_set_name() {
+		return this.rule_set_name;
+	}
+
+	public void setRule_set_name(java.lang.String rule_set_name) {
+		this.rule_set_name = rule_set_name;
+	}
+
+	public rule(java.lang.String id, java.lang.String rule_code,
+			java.lang.String rule_set_name) {
+		this.id = id;
+		this.rule_code = rule_code;
+		this.rule_set_name = rule_set_name;
+	}
 
 }
