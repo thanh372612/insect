@@ -8,12 +8,15 @@ public class INSECT implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "id")
+	@org.kie.api.definition.type.Label("id")
 	private java.lang.String id;
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "type")
+	@org.kie.api.definition.type.Label("type")
 	private java.lang.String type;
+
+	@org.kie.api.definition.type.Label(value = "product_code")
+	private java.lang.String product_code;
 
 	public INSECT() {
 	}
@@ -42,10 +45,20 @@ public class INSECT implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public INSECT(java.lang.String id, java.lang.String name, java.lang.String type) {
+	public java.lang.String getProduct_code() {
+		return this.product_code;
+	}
+
+	public void setProduct_code(java.lang.String product_code) {
+		this.product_code = product_code;
+	}
+
+	public INSECT(java.lang.String id, java.lang.String name,
+			java.lang.String type, java.lang.String product_code) {
 		this.id = id;
 		this.name = name;
 		this.type = type;
+		this.product_code = product_code;
 	}
 
 }
