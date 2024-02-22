@@ -12,6 +12,8 @@ public class INSECT implements java.io.Serializable {
 	private java.lang.String id;
 	@org.kie.api.definition.type.Label(value = "name")
 	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "type")
+	private java.lang.String type;
 
 	public INSECT() {
 	}
@@ -32,9 +34,18 @@ public class INSECT implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public INSECT(java.lang.String id, java.lang.String name) {
+	public java.lang.String getType() {
+		return this.type;
+	}
+
+	public void setType(java.lang.String type) {
+		this.type = type;
+	}
+
+	public INSECT(java.lang.String id, java.lang.String name, java.lang.String type) {
 		this.id = id;
 		this.name = name;
+		this.type = type;
 	}
 
 }
