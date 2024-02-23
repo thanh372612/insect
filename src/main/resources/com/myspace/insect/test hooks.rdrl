@@ -1,0 +1,9 @@
+package com.myspace.insect;
+
+import java.lang.Number;
+
+rule "test hooks"
+	dialect "mvel"
+	when
+	then
+end
